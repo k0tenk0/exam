@@ -1,0 +1,135 @@
+body {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: black;
+    color:beige;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+h1 {
+    margin-bottom: 1px; 
+}
+
+.main-container {
+    width: 80%;
+    margin: 1px auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.image {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    animation: rotate 5s linear infinite;
+    border-radius: 50%;
+}
+
+.text {
+    border: 2px solid #ccc;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 280px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center; 
+}
+
+label {
+    display: block;
+    margin-bottom: 2px;
+    color: #eee; 
+}
+
+textarea {
+    width: calc(100% - 12px);
+    max-width: 500px; 
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid beige; 
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: black;
+    color: #eee;
+    
+}
+
+select {
+    width: 200px;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid beige;
+    border-radius: 5px;
+    background-color: black;
+    color: #eee;
+}
+
+input[type="submit"] {
+    background-color: black;
+    color: beige;
+    padding: 12px 25px;
+    border: 2px solid beige;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #c7ac66;
+}
+
+p {
+    color: beige;
+    margin-top: 10px;
+    text-align: center;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+p {
+    font-size: 20px;
+    
+}
